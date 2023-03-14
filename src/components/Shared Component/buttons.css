@@ -1,0 +1,12 @@
+.buttons{
+    margin-top: 5px;
+}
+
+.buttons button{
+    padding: 5px 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    margin: 5px;
+}

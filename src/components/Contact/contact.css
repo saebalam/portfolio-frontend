@@ -1,0 +1,49 @@
+.contact{
+    margin-bottom: 40px;
+}
+
+.contact-bg{
+    height: 470px;
+    width: 90%;
+    margin: 0 auto;
+    background: url('../../Assets/Images/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.contact-form{
+    background-color: #f9f9f9;
+    margin-left: 60%;
+    /* border: 2px solid yellow; */
+    border-radius: 5px;
+    position: relative;
+    top: 65px;
+    width: 400px;
+    padding: 10px;
+}
+
+.contact-form label{
+    display: block;
+    text-align: left;
+    padding-left: 7px;
+}
+
+.contact-form input,textarea{
+    text-align: left;
+    margin: 4px 0 8px 0;
+    background-color: rgb(62 62 62 / 12%);
+    outline: none;
+    border: none;
+    line-height: 1.5rem;
+    width: 95%;
+    border-radius: 5px;
+}
+
+.contact-form button{
+    padding: 4px 8px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    margin: 3px 0 5px 0;
+}
