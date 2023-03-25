@@ -34,7 +34,7 @@ const Contact = () => {
     const sendMail = (e) => {
         e.preventDefault()
         const payload = { 'name': name, 'mobile': mobile, 'email': email, 'message': message }
-        axios.post('http://localhost:9000/contactMe', payload)
+        axios.post('https://upset-gold-gopher.cyclic.app/contactMe', payload)
             .then(res => {
                 if (res.status == 200) {
                     setName('')
