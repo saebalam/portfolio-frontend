@@ -1,0 +1,52 @@
+.about {
+  color: black;  
+  margin-bottom: 20px;
+  padding-top: 10px;
+  
+}
+.about > p,h1{
+    margin: 0 0;
+} 
+.about-hero{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 15px auto;
+    text-align: left;
+}
+.about-left{
+    width: 50%;
+    border: 1px solid black;
+    height: 80vh;
+}
+
+.about-left img{
+    width: 100%;
+    height: 100%;
+}
+
+.about-right{
+    width: 50%;
+    height: 80vh;
+    padding: 20px 20px 10px 20px;
+    background: rgb(240,205,168);
+background: linear-gradient(90deg, rgba(240,205,168,1) 0%, rgba(2,0,36,0.7008053221288515) 100%, rgba(0,212,255,1) 100%);
+    
+}
+
+.about-right> div{
+    margin: 50px 0;
+}
+
+.about .buttons{
+    margin-top: 5px;
+}
+
+.about .buttons button{
+    padding: 5px 15px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 5px;
+}
