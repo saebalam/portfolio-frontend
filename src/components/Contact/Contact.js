@@ -44,6 +44,9 @@ const Contact = () => {
                     toast('Message sent successfully!')
                 }
             })
+            .catch(err=>{
+                console.log(err)
+            })
     }
     return (
         <div className='contact'>
