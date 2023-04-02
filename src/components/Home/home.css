@@ -8,9 +8,24 @@
     color: white;
 }
 
-.home{
-    background-image: url('../../Assets/Images/bg.jpg');
+/* .home{
+    background-image: url('../../Assets/Images/bg4.avif');
     background-size: cover;
+} */
+
+.home::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-image:  url('../../Assets/Images/bg.jpg'); /*Put your image url*/
+        background-size: cover;
+        background-position: center;
+        opacity: 0.9; /*Value from 0.0 to 1.0*/
+    
 }
 
 .home .header{
@@ -51,7 +66,8 @@
     color:white;
 }
 .home .hero{
-    margin-top: 70px;
+    height: 100%;
+    margin-top: -70px;
     display: flex;
     align-items: center;
     gap: 80px;
@@ -65,6 +81,9 @@
 .home .hero .buttons button:hover{
     background-color: white;
     color: black;
+    /* transform: scale(0); */
+    transition:  .5s ease;
+    
 }
 
 .home .hero .buttons button:hover a{
@@ -77,6 +96,13 @@
 .home .hero .social > a{
     text-decoration: none;
     color: inherit;
+    transform: scale(0);
+    transition: transform .5s ease;
+}
+
+.home .social svg:hover{
+    transform: scale(1.2);
+    transition: transform .5s ease;
 }
 
 .home .hero .info p{
@@ -103,7 +129,7 @@
 }
 
 .home .buttons{
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .home .hero .buttons button{
@@ -113,6 +139,8 @@
     border: 1px solid white;
     border-radius: 12px;
     margin: 5px;
+    /* transform: scale(0); */
+    transition: .5s ease;
 }
 
 .home .right{
