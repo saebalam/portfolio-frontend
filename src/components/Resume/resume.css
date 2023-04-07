@@ -126,3 +126,19 @@
 .resume-right .box .column div {
     margin: 20px 2px;
 }
+
+@media only screen and (max-width:600px) {
+    .resume{
+        width: 100%;
+        margin: 20px auto;
+        padding: 5px;
+    }
+
+    .resume .resume-hero{
+        gap: 0;
+    }
+
+    .resume-right{
+        width: 100%;
+    }
+}

@@ -115,9 +115,9 @@ const Home = () => {
               </a>
             </div>
             <div className="info">
-              <p style={{ fontSize: "30px" }} className="firstp">
+              <p className="firstp">
                 Hello, I'M{" "}
-                <span className="styled-name" style={{ fontSize: "50px" }}>
+                <span className="styled-name" >
                   Saeb Alam
                 </span>
               </p>

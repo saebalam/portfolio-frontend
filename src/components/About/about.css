@@ -75,3 +75,23 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width:600px) {
+
+   
+    .about{
+        margin-top: 20px;
+    }
+    .about-left{
+        height: 70%;
+    }
+    .about-right{
+        overflow: scroll;
+        padding: 10px;
+        height: 80vh;
+    }
+
+    .about-right>div{
+        margin: 20px;
+    }
+}

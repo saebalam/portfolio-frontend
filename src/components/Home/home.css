@@ -83,6 +83,7 @@
 
 .styled-name{
     color: var(--clr-fonthighlight);
+    font-size: 50px;
 }
 
 .home .hero button{
@@ -124,7 +125,7 @@
 .home .firstp{
     margin-top: 5px;
     font-family: fantasy;
-    font-size: 13px;
+    font-size: 30px;
     letter-spacing: 1px;
     color: var(--clr-fontprimary);
 
@@ -178,13 +179,14 @@
 }
 
 .skills{
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 20px;
     position: absolute;
-    top: 70%;
-    left: 27%;
+    top: 75%;
+    left: 0;
 }
 
 .skills img{
@@ -201,7 +203,7 @@
     }
 
     .skills{
-        left: 15%;
+        /* left: 15%; */
     }
     
 }
@@ -217,9 +219,14 @@
         gap: 30px;
     }
 
+    .hero .right{
+        width: 13rem;
+        height: 13rem;
+    }
+
     .skills{
-        
-        left: 12%;
+        top: 80%;
+        /* left: 12%; */
     }
     
     .skills img{
@@ -241,6 +248,11 @@
 
     .home .header ul{
         padding: 1px;
+        flex-direction: column;
+    }
+
+    .home .my-name{
+        display: none;
     }
 
     .home .header ul li {
@@ -250,17 +262,36 @@
         transition: ease-in 0.3s;
     }
 
-    .hero{
+
+    .home .hero{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        gap: 30px;
+    }
+
+    .home .firstp{
+        font-size: 20px;
+    }
+    .styled-name{
+        color: var(--clr-fonthighlight);
+        font-size: 30px;
+    }
+
+    .hero .right{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .about-left{
+        height: 70%;
     }
 
     .skills{
         gap: 10px;
-        top: 88%;
-        left: 25%;
+        top: 90%;
+        /* left: 25%; */
     }
     
     .skills img{
