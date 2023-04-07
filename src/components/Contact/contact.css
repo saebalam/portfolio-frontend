@@ -1,6 +1,7 @@
 .contact{
-    margin-bottom: 40px;
-    margin-top: 30px;
+    margin-bottom: 90px;
+    margin-top: 100px;
+    /* border: 1px solid black; */
 }
 
 .contact-bg{
@@ -47,4 +48,32 @@
     background-color: black;
     border-radius: 5px;
     margin: 3px 0 5px 0;
+}
+
+@media only screen and (max-width:1000px){
+    .contact-form{
+        width: 290px;
+        margin-left: 50%;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .about-hero{
+        height: 500px;
+    }
+    .contact-form{
+        width: 240px;
+        margin-left: 50%;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .about-hero{
+        height: 500px;
+    }
+    .contact-form{
+        width: 240px;
+        margin-left: 30%;
+    }
+
 }

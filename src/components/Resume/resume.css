@@ -1,13 +1,15 @@
 .resume {
     width: 80%;
-    margin: 0 auto;
+    margin: 100px auto;
     padding-top: 50px;
     padding-bottom: 100px;
     box-sizing: border-box;
+    /* border: 1px solid black; */
 }
 
 .resume h1,p{
     margin: 0 0;
+    color: var(--clr-fontprimary);
 }
 
 .resume .resume-hero {
@@ -23,7 +25,7 @@
 }
 
 .labels-icons {
-    background-color: black;
+    background-color: var(--clr-divbg);
 }
 
 .skill-group{
@@ -37,20 +39,24 @@
     margin: 15px 2px;
     padding: 5px 5px 5px 5px;
     text-align: left;
-    color: white;
+    color: var(--clr-fontprimary);
     border-radius: 25px;
 }
 
+.labels div{
+    color: var(--clr-fontprimary);
+}
+
 .active-label {
-    color: white !important;
-    background-color: black;
+    color: var(--clr-fontprimary) !important;
+    background-color: var(--clr-divbg);
 }
 
 .resume .resume-left .labels div {
     margin: 15px 0px;
     padding: 5px 25px 5px 20px;
     text-align: left;
-    color: black;
+    color: var(--clr-fontprimary);
     /* background-color: black; */
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -63,6 +69,7 @@
     padding-left: 10px;
 
 }
+
 
 .progress-bar div{
     /* border: 1px solid red; */
@@ -77,16 +84,22 @@
     text-align: right;
     padding: 3px 8px;
     border-radius: 25px;
-    background-color: orangered;
-    color: white;
+    background-color: var(--clr-divbg);
+    color: var(--clr-fontprimary);
 }
 
+
+
 .li-item {
-    color: orangered;
+    color: var(--clr-fontprimary);
     display: flex;
     justify-content: space-between;
     list-style: disc;
     margin-top: 10px;
+}
+
+ .i{
+    color: var(--clr-fontprimary);
 }
 
 .disc-label {
@@ -98,7 +111,7 @@
 }
 
 .sub-li {
-    color: black;
+    color: var(--clr-fontprimary);
 }
 
 .box {

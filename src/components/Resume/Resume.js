@@ -20,21 +20,21 @@ const Resume = () => {
     if (labels.education == true) {
         description = <ul className="resume-right">
             <li className='li-item' style={{ marginTop: '5px' }}>
-                <div className='disc-label'><img src={disc} alt="" /> B.Tech in Computer Science - <i style={{color:'black'}}> 8.4 CGPA </i></div>
+                <div className='disc-label'><img src={disc} alt="" /> B.Tech in Computer Science - <i className='i'> 8.4 CGPA </i></div>
                 <div className='year'>2017 - 2021</div>
             </li>
             <ul>
                 <li className='sub-li'>Bengal College of Engineering - Durgapur(W.B)</li>
             </ul>
             <li className='li-item'>
-                <div className='disc-label'><img src={disc} alt="" />XII <sup>th </sup>  PCM - <i style={{color:'black'}}> 73.8 % </i></div>
+                <div className='disc-label'><img src={disc} alt="" />XII <sup>th </sup>  PCM - <i className='i'> 73.8 % </i></div>
                 <div className='year'>2015 - 2017</div>
             </li>
             <ul>
                 <li className='sub-li'>Techno Mission Intnl School - Bhagalpur(Bihar)</li>
             </ul>
             <li className='li-item'>
-                <div className='disc-label'><img src={disc} alt="" /> X <sup>th - </sup><i style={{color:'black'}}> 9.6 CGPA </i></div>
+                <div className='disc-label'><img src={disc} alt="" /> X <sup>th - </sup><i className='i'> 9.6 CGPA </i></div>
                 <div className='year'>2015</div>
             </li>
             <ul>
@@ -202,7 +202,7 @@ const Resume = () => {
         <div className='resume'>
             <h1>Resume</h1>
             <p>My Formal Bio Details</p>
-            <img src={line} alt="" width='200px' />
+            <img className={document.documentElement.className=='dark'?'line-white':'line'} src={line} alt="" width='200px' />
 
             <div className='resume-hero'>
                 <div className="resume-left">

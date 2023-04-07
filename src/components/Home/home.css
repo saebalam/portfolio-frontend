@@ -1,11 +1,13 @@
 *{
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .home{
     margin: 0;
     padding: 0;
     color: white;
+    /* border: 1px solid black; */
 }
 
 /* .home{
@@ -38,6 +40,10 @@
     margin-top: 10px;
 }
 
+.home .my-name{
+    color: var(--clr-fontprimary);
+}
+
 .home .header ul{
     display: flex;
     justify-content: center;
@@ -50,15 +56,16 @@
     padding: 4px 6px;
     margin: 2px 20px;
     transition: ease-in 0.3s;
+    color: var(--clr-fontprimary);
 }
 
 .home .header ul li:hover {
-    background-color: tomato;
+    background-color: var(--clr-bghighlight);
 }
 
 
 .active-link{
-    background-color: tomato;
+    background-color: var(--clr-bghighlight);
 }
 
 .home a{
@@ -66,12 +73,16 @@
     color:white;
 }
 .home .hero{
-    height: 100%;
-    margin-top: -70px;
+    height: 90%;
+    margin-top: -80px;
     display: flex;
     align-items: center;
     gap: 80px;
     justify-content: center;
+}
+
+.styled-name{
+    color: var(--clr-fonthighlight);
 }
 
 .home .hero button{
@@ -92,10 +103,11 @@
 
 .home .hero .social > a{
     margin: 0 4px;
+    color: var(--clr-fontprimary);
 }
 .home .hero .social > a{
     text-decoration: none;
-    color: inherit;
+    /* color: inherit; */
     transform: scale(0);
     transition: transform .5s ease;
 }
@@ -114,7 +126,12 @@
     font-family: fantasy;
     font-size: 13px;
     letter-spacing: 1px;
+    color: var(--clr-fontprimary);
 
+}
+
+.typed-animation{
+    color: var(--clr-fontprimary);
 }
 
 .home .secondp{
@@ -124,6 +141,7 @@
 }
 
 .home .thirdp{
+    color: var(--clr-fontprimary);
     font-size: smaller;
     margin-top: 5px;
 }
@@ -135,17 +153,22 @@
 .home .hero .buttons button{
     padding: 5px 15px;
     background-color: transparent;
-    color: white;
-    border: 1px solid white;
+    color: var(--clr-fontprimary);
+    border: 1px solid var(--clr-fontprimary);
     border-radius: 12px;
     margin: 5px;
     /* transform: scale(0); */
     transition: .5s ease;
 }
 
+.home .hero .buttons a{
+    color: var(--clr-fontprimary);
+}
+
 .home .right{
     width: 17rem;
     height: 17rem;
+    overflow: hidden;
 }
 
 .home .right img{
@@ -154,6 +177,95 @@
     border-radius: 50%;
 }
 
-@media screen {
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    position: absolute;
+    top: 70%;
+    left: 27%;
+}
+
+.skills img{
+    width: 60px;
+    height: 60px;
+    /* margin-right: 100px; */
+}
+
+@media only screen and (max-width:1100px) {
+
+    .home .header{
+        width: 90%;
+        gap: 50px;
+    }
+
+    .skills{
+        left: 15%;
+    }
     
+}
+
+@media only screen and (max-width:890px) {
+
+    .home .header{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .skills{
+        
+        left: 12%;
+    }
+    
+    .skills img{
+        width: 50px;
+        height: 50px;
+        /* margin-right: 100px; */
+    }
+    
+}
+
+@media only screen and (max-width:600px) {
+    .home .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
+    .home .header ul{
+        padding: 1px;
+    }
+
+    .home .header ul li {
+        cursor: pointer;
+        padding: 2px 3px;
+        margin: 2px 6px;
+        transition: ease-in 0.3s;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills{
+        gap: 10px;
+        top: 88%;
+        left: 25%;
+    }
+    
+    .skills img{
+        width: 40px;
+        height: 40px;
+        /* margin-right: 100px; */
+    }
 }

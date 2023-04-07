@@ -1,14 +1,14 @@
 import React from 'react'
 import './about.css'
 import line from '../../Assets/Images/fancy-line.png'
-import MeBig from '../../Assets/Images/me-big.jpg'
+import MeBig from '../../Assets/Images/me-big1.jpg'
 
 const About = () => {
   return (
     <div className='about'>
         <h1>About Me</h1>
         <p>Why choose me?</p>
-        <img src={line} alt="" width='200px' />
+        <img className={document.documentElement.className=='dark'?'line-white':'line'} src={line} alt="" width='200px' />
         <div className='about-hero'>
             <div className="about-left">
                 <img src={MeBig} alt="" />

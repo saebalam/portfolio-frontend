@@ -1,12 +1,19 @@
 .work{
     width: 95%;
-    margin: 0 auto;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+    
+}
+
+div{
+    overflow: hidden;
 }
 
 .card-wrapper{
     padding:20px;
     display:flex;
-    gap:30px;
+    gap:50px;
     flex-wrap:wrap;
     justify-content:center;
+    background-color: var(--clr-background);
 }

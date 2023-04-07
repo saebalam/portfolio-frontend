@@ -2,10 +2,12 @@
   color: black;  
   margin-bottom: 20px;
   padding-top: 10px;
+  /* border: 1px solid black; */
   
 }
 .about > p,h1{
     margin: 0 0;
+    color: var(--clr-fontprimary);
 } 
 .about-hero{
     display: flex;
@@ -16,7 +18,7 @@
 }
 .about-left{
     width: 50%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 80vh;
 }
 
@@ -30,8 +32,13 @@
     height: 80vh;
     padding: 20px 20px 10px 20px;
     background: rgb(240,205,168);
-background: linear-gradient(90deg, rgba(240,205,168,1) 0%, rgba(2,0,36,0.7008053221288515) 100%, rgba(0,212,255,1) 100%);
+/* background: linear-gradient(90deg, rgba(240,205,168,1) 0%, rgba(2,0,36,0.7008053221288515) 100%, rgba(0,212,255,1) 100%); */
+    background: var(--clr-bggradient);
     
+}
+
+.about-right p,li{
+    color: var(--clr-fontprimary);
 }
 
 .about-right> div{
@@ -49,4 +56,22 @@ background: linear-gradient(90deg, rgba(240,205,168,1) 0%, rgba(2,0,36,0.7008053
     border: 1px solid black;
     border-radius: 12px;
     margin: 5px;
+}
+
+@media only screen and (max-width:890px) {
+
+    .about{
+        height: 100vh;
+    }
+    .about .about-hero{
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-left{
+        height: 70vh;
+    }
+    .about-left,.about-right{
+        width: 100%;
+    }
 }

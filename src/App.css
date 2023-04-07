@@ -1,10 +1,83 @@
+
+.light{
+  --clr-fontprimary : rgb(55, 55, 55);
+  --clr-fonthighlight : tomato;
+  --clr-background : rgb(245, 243, 215);
+  --clr-bghighlight : tomato;
+  --clr-divbg : #ebcda5;
+  --clr-bggradient: linear-gradient(90deg, rgba(240,205,168,1) 0%, rgba(2,0,36,0.7008053221288515) 100%, rgba(0,212,255,1) 100%);
+  --clr-box-shadow: rgb(159 138 138) 0px 2px 8px 0px;
+  --clr-fancy-line: 1;
+}
+
+.dark{
+  --clr-fontprimary : white;
+  --clr-fonthighlight : #0092cc;
+  --clr-background : #201a31;
+  --clr-bghighlight : #0092cc;
+  --clr-divbg : #38304c;
+  --clr-bggradient: linear-gradient(90deg, rgb(123 106 89) 0%, rgba(2,0,36,0.7008053221288515) 100%, rgba(0,212,255,1) 100%);
+  --clr-box-shadow: box-shadow: #9d9b9f87 0px 2px 8px 0px;
+  --clr-fancy-line: 0;
+}
+
 .App {
   text-align: center;
+  overflow-x: hidden;
+  background-color: var(--clr-background);
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.line-white{
+  filter: invert(1);
+}
+
+.toggle-container input{
+  display: none;
+}
+
+.check-button{
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+  /* padding: 3px; */
+  display: flex;
+  align-items: center;
+  background-color: rgb(220, 220, 215);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.check-button::before{
+  position: absolute;
+  left: 4px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  /* margin: 2px; */
+  border-radius: 50%;
+  background-color: #8b8d8d;
+  transition: all 0.5s ease;
+}
+
+input:checked + .check-button{
+  background-color: #434245;
+}
+
+input:checked + .check-button::before{
+  transform: translate(20px);
+  background-color: rgb(240, 237, 234);
+}
+
+.toggle-button{
+  position: absolute;
+  right: 20px;
+  top: 30px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

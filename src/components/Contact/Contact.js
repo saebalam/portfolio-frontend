@@ -53,7 +53,7 @@ const Contact = () => {
             <Toaster />
             <h1>Contact Me</h1>
             <p>Lets keep in touch</p>
-            <img src={line} alt="" width='200px' />
+            <img className={document.documentElement.className=='dark'?'line-white':'line'} src={line} alt="" width='200px' />
 
             <div className='contact-bg'>
                 <div className="contact-form">
