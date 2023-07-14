@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import { useRef, useState } from 'react';
+import {BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 
 document.documentElement.className='dark'
 
@@ -34,7 +35,13 @@ function App() {
 
       {/* <button className='toggle-button' onClick={handleToggle}>toggle</button> */}
 
-      <Home />
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </Router>
+
+      {/* <Home /> */}
       
     </div>
   );

@@ -14,15 +14,57 @@
     
 }
 
-.contact-form{
-    background-color: #f9f9f9;
+/* .contact-form{
+    background-color: #4d4268;
     margin-left: 60%;
-    /* border: 2px solid yellow; */
+    
     border-radius: 5px;
     position: relative;
     top: 65px;
     width: 400px;
     padding: 10px;
+} */
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--clr-divbg);
+    margin-left: 60%;
+    border-radius: 5px;
+    position: relative;
+    top: 65px;
+    width: 300px;
+    padding: 10px;
+    overflow: visible;
+}
+
+.contact-form div{
+    position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 12px;
+   overflow: visible;
+}
+
+.contact-form span{
+    color: var(--clr-fontprimary);
+    position: absolute;
+    right: -5px;
+    padding : 4px;
+    font-size: 12px;
+    top: -20px;
+    background-color: var(--clr-background);
+}
+
+.contact-form svg{
+    color: var(--clr-fontprimary);
+}
+
+.contact-form a{
+    color: var(--clr-fontprimary);
 }
 
 .contact-form label{
@@ -62,8 +104,8 @@
         height: 500px;
     }
     .contact-form{
-        width: 240px;
-        margin-left: 50%;
+        width: 300px;
+        margin-left: 30%;
     }
 }
 
@@ -72,8 +114,8 @@
         height: 500px;
     }
     .contact-form{
-        width: 240px;
-        margin-left: 30%;
+        width: 300px;
+        margin-left: 10%;
     }
 
 }

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./home.css";
 import { animated, useSpring } from "@react-spring/web";
 import { Link } from "react-router-dom";
-import MyResume from "../../Assets/Saeb_Alam_Resume.pdf";
+import MyResume from "../../Assets/saeb_alam_resume.pdf";
 import reactlogo from '../../Assets/Images/react.png'
 import javascriptlogo from '../../Assets/Images/js.png'
 import htmllogo from '../../Assets/Images/html.png'
@@ -105,7 +105,7 @@ const Home = () => {
                 <FontAwesomeIcon fontSize={30} icon={faSquareGithub} />
               </a>
               <a
-                href="https://www.linkedin.com/in/saeb-alam-4a09391b0/"
+                href="https://www.linkedin.com/in/saebalam/"
                 target="_blank"
               >
                 <FontAwesomeIcon fontSize={30} icon={faLinkedin} />

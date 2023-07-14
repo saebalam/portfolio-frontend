@@ -10,25 +10,6 @@
     /* border: 1px solid black; */
 }
 
-/* .home{
-    background-image: url('../../Assets/Images/bg4.avif');
-    background-size: cover;
-} */
-
-.home::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        background-image:  url('../../Assets/Images/bg.jpg'); /*Put your image url*/
-        background-size: cover;
-        background-position: center;
-        opacity: 0.9; /*Value from 0.0 to 1.0*/
-    
-}
 
 .home .header{
     display: flex;
@@ -143,6 +124,7 @@
 
 .home .thirdp{
     color: var(--clr-fontprimary);
+    font-family: cursive;
     font-size: smaller;
     margin-top: 5px;
 }

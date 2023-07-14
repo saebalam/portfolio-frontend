@@ -12,6 +12,10 @@
     color: var(--clr-fontprimary);
 }
 
+.label{
+    color: var(--clr-fontprimary);
+}
+
 .resume .resume-hero {
     display: flex;
     justify-content: center;
